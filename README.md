@@ -213,7 +213,7 @@ GitHub
 
 
 # Project Structure
-
+```
 real-estate-sales-funnel-analysis
 │
 ├── data
@@ -221,7 +221,7 @@ real-estate-sales-funnel-analysis
 ├── powerbi
 ├── images
 └── docs
-
+```
 
 
 
