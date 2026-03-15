@@ -154,6 +154,7 @@ GROUP BY l.lead_source;
 
 # Dashboard
 
+
 A Power BI dashboard was created to visualize key performance indicators and support the analysis.
 
 ##Main visuals include:
