@@ -52,3 +52,32 @@ The dataset simulates the commercial operation of a real estate development.
 # Data Model
 
 Relationships between tables:
+
+leads
+│
+│ lead_id
+▼
+pipeline
+│
+│ lead_id
+▼
+sales
+▲
+│ lot_id
+lots
+
+salespeople
+│
+│ salesperson
+▼
+sales
+
+
+
+
+
+
+
+
+
+
