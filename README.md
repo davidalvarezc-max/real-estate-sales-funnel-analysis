@@ -112,14 +112,15 @@ FROM lots
 GROUP BY status;
 
 
-Leads by marketing source
+###Leads by marketing source
 SELECT
     lead_source,
     COUNT(*) AS total_leads
 FROM leads
 GROUP BY lead_source
 ORDER BY total_leads DESC;
-Sales by salesperson
+
+###Sales by salesperson
 SELECT
     salesperson,
     COUNT(*) AS total_sales,
@@ -127,7 +128,8 @@ SELECT
 FROM sales
 GROUP BY salesperson
 ORDER BY total_sales DESC;
-Conversion by lead source
+
+###Conversion by lead source
 SELECT
     l.lead_source,
     COUNT(DISTINCT l.lead_id) AS leads,
@@ -136,11 +138,13 @@ FROM leads l
 LEFT JOIN sales s
 ON l.lead_id = s.lead_id
 GROUP BY l.lead_source;
-Dashboard
+
+
+#Dashboard
 
 A Power BI dashboard was created to visualize key performance indicators and support the analysis.
 
-Main visuals include:
+##Main visuals include:
 
 Sales Funnel
 
@@ -154,7 +158,9 @@ Inventory Remaining
 
 Example:
 
-Key Insights
+
+
+#Key Insights
 
 Key findings from the analysis:
 
@@ -166,7 +172,7 @@ Sales performance varies across the sales team
 
 The current sales velocity is below the level required to absorb inventory efficiently
 
-Business Recommendations
+#usiness Recommendations
 
 Based on the analysis, the following actions are recommended:
 
@@ -178,7 +184,9 @@ Reallocate marketing budget to channels with higher conversion rates
 
 Implement weekly tracking of funnel KPIs
 
-Tools Used
+
+
+#Tools Used
 
 SQL (SQLite)
 
@@ -188,7 +196,8 @@ Excel
 
 GitHub
 
-Project Structure
+
+#Project Structure
 
 real-estate-sales-funnel-analysis
 │
