@@ -157,7 +157,7 @@ GROUP BY l.lead_source;
 
 A Power BI dashboard was created to visualize key performance indicators and support the analysis.
 
-##Main visuals include:
+## Main visuals include:
 
 Sales Funnel
 
@@ -173,7 +173,7 @@ Example:
 
 
 
-#Key Insights
+# Key Insights
 
 Key findings from the analysis:
 
@@ -185,7 +185,7 @@ Sales performance varies across the sales team
 
 The current sales velocity is below the level required to absorb inventory efficiently
 
-#usiness Recommendations
+# usiness Recommendations
 
 Based on the analysis, the following actions are recommended:
 
@@ -199,7 +199,7 @@ Implement weekly tracking of funnel KPIs
 
 
 
-#Tools Used
+# Tools Used
 
 SQL (SQLite)
 
@@ -210,7 +210,7 @@ Excel
 GitHub
 
 
-#Project Structure
+# Project Structure
 
 real-estate-sales-funnel-analysis
 │
