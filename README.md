@@ -111,6 +111,7 @@ SELECT
 FROM lots
 GROUP BY status;
 
+---
 
 ###Leads by marketing source
 SELECT
@@ -119,6 +120,8 @@ SELECT
 FROM leads
 GROUP BY lead_source
 ORDER BY total_leads DESC;
+
+---
 
 ###Sales by salesperson
 SELECT
