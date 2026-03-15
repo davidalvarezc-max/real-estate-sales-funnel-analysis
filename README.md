@@ -112,7 +112,91 @@ FROM lots
 GROUP BY status;
 
 
+Leads by marketing source
+SELECT
+    lead_source,
+    COUNT(*) AS total_leads
+FROM leads
+GROUP BY lead_source
+ORDER BY total_leads DESC;
+Sales by salesperson
+SELECT
+    salesperson,
+    COUNT(*) AS total_sales,
+    SUM(sale_price_mxn) AS revenue
+FROM sales
+GROUP BY salesperson
+ORDER BY total_sales DESC;
+Conversion by lead source
+SELECT
+    l.lead_source,
+    COUNT(DISTINCT l.lead_id) AS leads,
+    COUNT(DISTINCT s.sale_id) AS sales
+FROM leads l
+LEFT JOIN sales s
+ON l.lead_id = s.lead_id
+GROUP BY l.lead_source;
+Dashboard
 
+A Power BI dashboard was created to visualize key performance indicators and support the analysis.
+
+Main visuals include:
+
+Sales Funnel
+
+Sales by Lead Source
+
+Sales by Salesperson
+
+Sales Over Time
+
+Inventory Remaining
+
+Example:
+
+Key Insights
+
+Key findings from the analysis:
+
+The sales funnel shows a significant drop between visit and negotiation stages
+
+Some marketing channels generate many leads but relatively few sales
+
+Sales performance varies across the sales team
+
+The current sales velocity is below the level required to absorb inventory efficiently
+
+Business Recommendations
+
+Based on the analysis, the following actions are recommended:
+
+Improve lead qualification before scheduling site visits
+
+Standardize follow-up procedures for the sales team
+
+Reallocate marketing budget to channels with higher conversion rates
+
+Implement weekly tracking of funnel KPIs
+
+Tools Used
+
+SQL (SQLite)
+
+Power BI
+
+Excel
+
+GitHub
+
+Project Structure
+
+real-estate-sales-funnel-analysis
+│
+├── data
+├── sql
+├── powerbi
+├── images
+└── docs
 
 
 
