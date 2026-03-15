@@ -111,7 +111,7 @@ SELECT
 FROM lots
 GROUP BY status;
 
----
+```
 
 ###Leads by marketing source
 SELECT
