@@ -53,24 +53,26 @@ The dataset simulates the commercial operation of a real estate development.
 
 Relationships between tables:
 
+```
 leads
-│
-│ lead_id
-▼
+  │
+  │ lead_id
+  ▼
 pipeline
-│
-│ lead_id
-▼
+  │
+  │ lead_id
+  ▼
 sales
-▲
-│ lot_id
+  ▲
+  │ lot_id
 lots
 
 salespeople
-│
-│ salesperson
-▼
+   │
+   │ salesperson
+   ▼
 sales
+```
 
 
 
