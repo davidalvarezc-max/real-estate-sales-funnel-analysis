@@ -74,6 +74,42 @@ sales
 
 
 
+### Primary Keys
+
+| Table | Primary Key |
+|------|-------------|
+| lots | lot_id |
+| leads | lead_id |
+| pipeline | opportunity_id |
+| sales | sale_id |
+| salespeople | salesperson |
+
+### Record Counts
+
+| Table | Records |
+|------|--------|
+| lots | 185 |
+| leads | ~900 |
+| pipeline | ~900 |
+| sales | 25 |
+| salespeople | 5 |
+
+---
+
+# SQL Analysis
+
+SQL was used to explore the dataset and evaluate key commercial metrics.
+
+Examples of analyses performed:
+
+### Inventory status
+
+```sql
+SELECT
+    status,
+    COUNT(*) AS total_lots
+FROM lots
+GROUP BY status;
 
 
 
