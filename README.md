@@ -185,7 +185,7 @@ Sales performance varies across the sales team
 
 The current sales velocity is below the level required to absorb inventory efficiently
 
-# usiness Recommendations
+# Business Recommendations
 
 Based on the analysis, the following actions are recommended:
 
