@@ -113,7 +113,9 @@ GROUP BY status;
 
 ```
 
-###Leads by marketing source
+Leads by marketing source
+
+```sql
 SELECT
     lead_source,
     COUNT(*) AS total_leads
@@ -121,7 +123,7 @@ FROM leads
 GROUP BY lead_source
 ORDER BY total_leads DESC;
 
----
+```
 
 ###Sales by salesperson
 SELECT
