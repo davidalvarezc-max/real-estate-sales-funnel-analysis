@@ -113,7 +113,7 @@ GROUP BY status;
 
 ```
 
-Leads by marketing source
+### Leads by marketing source
 
 ```sql
 SELECT
@@ -125,7 +125,10 @@ ORDER BY total_leads DESC;
 
 ```
 
-###Sales by salesperson
+### Sales by salesperson
+
+```sql
+
 SELECT
     salesperson,
     COUNT(*) AS total_sales,
@@ -134,7 +137,11 @@ FROM sales
 GROUP BY salesperson
 ORDER BY total_sales DESC;
 
-###Conversion by lead source
+```
+
+### Conversion by lead source
+```sql
+
 SELECT
     l.lead_source,
     COUNT(DISTINCT l.lead_id) AS leads,
@@ -143,9 +150,9 @@ FROM leads l
 LEFT JOIN sales s
 ON l.lead_id = s.lead_id
 GROUP BY l.lead_source;
+```
 
-
-#Dashboard
+# Dashboard
 
 A Power BI dashboard was created to visualize key performance indicators and support the analysis.
 
