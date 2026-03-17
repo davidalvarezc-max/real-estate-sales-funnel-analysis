@@ -1,3 +1,6 @@
+<img width="1269" height="672" alt="image" src="https://github.com/user-attachments/assets/675e1eca-be1a-44a4-a99f-2bfcc9ff34cb" />
+
+
 🔹 Real Estate Sales Funnel Analysis
 
 SQL and Power BI analysis of a real estate development to evaluate sales funnel performance, identify bottlenecks, and uncover data quality issues affecting decision-making.
